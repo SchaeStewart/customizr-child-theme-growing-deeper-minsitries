@@ -1,0 +1,80 @@
+/*
+Theme Name: customizr-child-theme-growing-deeper-minsitries
+Version: 1.0
+Description: A child theme of Customizr developed for GrowingDeeperMinsitries.org
+Template: customizr
+Author: Schaffer Stewart SchaeStewart@gmail.com 
+*/
+/* Your awesome customization starts here */
+/* HIDE SOCIAL ICONS */
+.navbar-wrapper .navbar.resp .social-block {
+/*display:            none;*/
+}
+
+/* CENTER MENU */
+.navbar-wrapper .navbar.resp ul.nav.tc-hover-menu {
+display:            block;
+float:              none;
+width:              100%;
+margin:             0%;              /* Adjust +/- % if needed */
+}
+
+/* Variable number of floating elements */
+.navbar-wrapper .navbar.resp .nav        {
+float:              none;
+width:              100%;
+text-align:         center;
+}
+
+.navbar-wrapper .navbar.resp .nav > li {
+float:              none;
+display:            inline-block;
+}
+
+/* Adjust margin/padding */
+.navbar-wrapper .navbar.resp .navbar-inner {
+margin: 0px 0px;
+padding: 0px 0px;
+}
+
+/* Remove page titles */
+.page h3.entry-title {
+display: none;
+}
+
+.menu-item {
+text-align: left;
+}
+
+/* Adjust menu for smaller devices */
+@media (max-width: 979px) {
+
+.navbar .navbar-inner {
+float: left;
+    min-width: 180px
+}
+
+.navbar .btn-navbar {
+    float: none;
+}
+.navbar-wrapper .navbar.resp .nav > li {
+float:      none;
+display:    block;
+}
+.btn.btn-navbar {
+    margin-left: 40px;
+}
+
+header.tc-header {
+	background: url(/wp-content/uploads/2016/08/tree-roots-and-girl-smaller.png);
+}
+#headerImgWrapper {
+        width: 90%;
+        height: auto;
+        margin: auto;
+}
+#headerImg {
+	display: block;
+	margin: auto;
+	width: 60%;
+}
