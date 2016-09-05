@@ -46,35 +46,43 @@ display: none;
 text-align: left;
 }
 
+.tc-header {
+    /*min-height: 45px;*/
+    /*background: #fff;*/
+    border-bottom: 10px;
+    /*z-index: 200*/
+}
+
+#headerImgWrapper {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+#headerImg {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
 /* Adjust menu for smaller devices */
 @media (max-width: 979px) {
 
-.navbar .navbar-inner {
-float: left;
-    min-width: 180px
-}
+    .navbar .navbar-inner {
+        float: left;
+        min-width: 180px
+    }
 
-.navbar .btn-navbar {
-    float: none;
-}
-.navbar-wrapper .navbar.resp .nav > li {
-float:      none;
-display:    block;
-}
-.btn.btn-navbar {
-    margin-left: 40px;
-}
+    .navbar .btn-navbar {
+        float: none;
+    }
 
-header.tc-header {
-	background: url(/wp-content/uploads/2016/08/tree-roots-and-girl-smaller.png);
-}
-#headerImgWrapper {
-        width: 90%;
-        height: auto;
-        margin: auto;
-}
-#headerImg {
-	display: block;
-	margin: auto;
-	width: 60%;
+    .navbar-wrapper .navbar.resp .nav > li {
+        float: none;
+        display: block;
+    }
+
+    .btn.btn-navbar {
+        margin-left: 40px;
+    }
 }
