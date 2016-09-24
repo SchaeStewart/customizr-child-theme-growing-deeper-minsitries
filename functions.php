@@ -13,4 +13,3 @@ function rdc_navbar_wrapper_class()
     return array('navbar-wrapper', 'clearfix', 'span12');
 }
 ?>
-}
