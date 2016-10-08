@@ -1,49 +1,138 @@
 /*
 Theme Name: customizr-child-theme-growing-deeper-minsitries
-Version: 1.1
+Version: 1.2
 Description: A child theme of Customizr developed for GrowingDeeperMinsitries.org
 Template: customizr
-Author: Schaffer Stewart SchaeStewart@gmail.com 
+Author: Schaffer Stewart SchaeStewart@gmail.com
 */
+
+
+
 /* Your awesome customization starts here */
 /* HIDE SOCIAL ICONS */
-.navbar-wrapper .navbar.resp .social-block {
 /*display:            none;*/
+/* START OF Center Header Block Items 3.2.* (Needs additional php CODE BLOCK 2 in Child Theme functions.php) */
+
+/* STEP 1 - CENTER LOGO */
+/*
+/* Built in to 3.2.1    */
+
+
+/* STEP 2 - CENTER TAGLINE */
+
+/* OPTION 2/1 - HIDE TAGLINE */
+/*
+/* Built in to 3.2.1    */
+
+/* OPTION 2/2 - CENTER TAGLINE */
+.navbar-wrapper .navbar.resp h2 {
+    display:            block;
+    text-align:         center;
+    margin:             0px 0%;            /* Adjust +/- % if needed */
 }
 
-/* CENTER MENU */
+/* STEP 3 - CENTER SOCIAL ICONS */
+
+/* OPTION 3/1 - HIDE SOCIAL ICONS */
+.navbar-wrapper .navbar.resp .social-block {
+    display:            none;
+}
+
+
+/* OPTION 3/2 - CENTER SOCIAL ICONS */
+.navbar-wrapper .navbar.resp .social-block {
+    display:            block;
+    margin:             0 37%;              /* Adjust +/- % if needed */
+}
+
+
+/* STEP 4 */
+/* OPTION 4/1 - CENTER MENU */
 .navbar-wrapper .navbar.resp ul.nav.tc-hover-menu {
-display:            block;
-float:              none;
-width:              100%;
-margin:             0%;              /* Adjust +/- % if needed */
+    display:            block;
+    float:              none;
+    width:              100%;
+    margin:             0 10%;              /* Adjust +/- % if needed */
 }
 
 /* Variable number of floating elements */
 .navbar-wrapper .navbar.resp .nav        {
-float:              none;
-width:              100%;
-text-align:         center;
+    float:              none;
+    width:              100%;
+    text-align:         center;
 }
 
-.navbar-wrapper .navbar.resp .nav > li {
-float:              none;
-display:            inline-block;
+.navbar-wrapper .navbar.resp .nav > li   {
+    float:              none;
+    display:            inline-block;
+}
+
+/* Fix 2nd level <li>s */
+.navbar-wrapper .navbar.resp .nav > li .dropdown-menu li {
+    float: left;
+    width: 100%;
+    text-align: left;
 }
 
 /* Adjust margin/padding */
 .navbar-wrapper .navbar.resp .navbar-inner {
-margin: 0px 0px;
-padding: 0px 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+/* STEP 5 */
+/* OPTION 1/1 - HIDE NAVBAR BOX */
+/*
+/* Built in to 3.2.1 *//* STEP 6 */
+/* RESPONSIVENESS */
+@media (max-width: 979px) {
+    .tc-header .brand {
+        width: auto;
+    }
+    .row-fluid .offset1:first-child {
+        margin-left: 0;
+    }
+}
+/* END OF Center Header Block Items 3.2.* (Needs additional php CODE BLOCK 2 in Child Theme functions.php) */
+/*Begin menu center*/
+/* HIDE SOCIAL ICONS */
+.navbar-wrapper .navbar.resp .social-block {
+    /*display:            none;*/
+}
+
+/* CENTER MENU */
+.navbar-wrapper .navbar.resp ul.nav.tc-hover-menu {
+    display:            block;
+    float:              none;
+    width:              100%;
+    margin:             0%;              /* Adjust +/- % if needed */
+}
+
+/* Variable number of floating elements */
+.navbar-wrapper .navbar.resp .nav        {
+    float:              none;
+    width:              100%;
+    text-align:         center;
+}
+
+.navbar-wrapper .navbar.resp .nav > li {
+    float:              none;
+    display:            inline-block;
+}
+
+/* Adjust margin/padding */
+.navbar-wrapper .navbar.resp .navbar-inner {
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 /* Remove page titles */
 .page h3.entry-title {
-display: none;
+    display: none;
 }
 
 .menu-item {
-text-align: left;
+    text-align: left;
 }
 
 .tc-header {
