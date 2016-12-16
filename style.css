@@ -1,59 +1,19 @@
 /*
 Theme Name: customizr-child-theme-growing-deeper-minsitries
-Version: 1.2
+Version: 1.3
 Description: A child theme of Customizr developed for GrowingDeeperMinsitries.org
 Template: customizr
 Author: Schaffer Stewart SchaeStewart@gmail.com
 */
 
 
-
-/* Your awesome customization starts here */
-/* HIDE SOCIAL ICONS */
-/*display:            none;*/
-/* START OF Center Header Block Items 3.2.* (Needs additional php CODE BLOCK 2 in Child Theme functions.php) */
-
-/* STEP 1 - CENTER LOGO */
-/*
-/* Built in to 3.2.1    */
-
-
-/* STEP 2 - CENTER TAGLINE */
-
-/* OPTION 2/1 - HIDE TAGLINE */
-/*
-/* Built in to 3.2.1    */
-
-/* OPTION 2/2 - CENTER TAGLINE */
+/* CENTER TAGLINE */
 .navbar-wrapper .navbar.resp h2 {
     display:            block;
     text-align:         center;
     margin:             0px 0%;            /* Adjust +/- % if needed */
 }
 
-/* STEP 3 - CENTER SOCIAL ICONS */
-
-/* OPTION 3/1 - HIDE SOCIAL ICONS */
-.navbar-wrapper .navbar.resp .social-block {
-    display:            none;
-}
-
-
-/* OPTION 3/2 - CENTER SOCIAL ICONS */
-.navbar-wrapper .navbar.resp .social-block {
-    display:            block;
-    margin:             0 37%;              /* Adjust +/- % if needed */
-}
-
-
-/* STEP 4 */
-/* OPTION 4/1 - CENTER MENU */
-.navbar-wrapper .navbar.resp ul.nav.tc-hover-menu {
-    display:            block;
-    float:              none;
-    width:              100%;
-    margin:             0 10%;              /* Adjust +/- % if needed */
-}
 
 /* Variable number of floating elements */
 .navbar-wrapper .navbar.resp .nav        {
@@ -80,55 +40,18 @@ Author: Schaffer Stewart SchaeStewart@gmail.com
     padding: 0px 0px;
 }
 
-/* STEP 5 */
-/* OPTION 1/1 - HIDE NAVBAR BOX */
-/*
-/* Built in to 3.2.1 *//* STEP 6 */
-/* RESPONSIVENESS */
-@media (max-width: 979px) {
-    .tc-header .brand {
-        width: auto;
-    }
-    .row-fluid .offset1:first-child {
-        margin-left: 0;
-    }
-}
-/* END OF Center Header Block Items 3.2.* (Needs additional php CODE BLOCK 2 in Child Theme functions.php) */
 /*Begin menu center*/
 /* HIDE SOCIAL ICONS */
 .navbar-wrapper .navbar.resp .social-block {
     /*display:            none;*/
 }
 
-/* CENTER MENU */
-.navbar-wrapper .navbar.resp ul.nav.tc-hover-menu {
-    display:            block;
-    float:              none;
-    width:              100%;
-    margin:             0%;              /* Adjust +/- % if needed */
-}
 
 /* Variable number of floating elements */
 .navbar-wrapper .navbar.resp .nav        {
     float:              none;
     width:              100%;
     text-align:         center;
-}
-
-.navbar-wrapper .navbar.resp .nav > li {
-    float:              none;
-    display:            inline-block;
-}
-
-/* Adjust margin/padding */
-.navbar-wrapper .navbar.resp .navbar-inner {
-    margin: 0px 0px;
-    padding: 0px 0px;
-}
-
-/* Remove page titles */
-.page h3.entry-title {
-    display: none;
 }
 
 .menu-item {
@@ -154,24 +77,31 @@ Author: Schaffer Stewart SchaeStewart@gmail.com
     width: 70%;
 }
 
-/* Adjust menu for smaller devices */
-@media (max-width: 979px) {
-
-    .navbar .navbar-inner {
-        float: left;
-        min-width: 180px
-    }
-
-    .navbar .btn-navbar {
-        float: none;
-    }
-
-    .navbar-wrapper .navbar.resp .nav > li {
-        float: none;
-        display: block;
-    }
-
-    .btn.btn-navbar {
-        margin-left: 40px;
-    }
+/*Sets the h tags to a nice green color*/
+h1, h2, h3, h4, h5, h6 {
+    color: #61B961;
 }
+
+/*Gives content background rounded edges*/
+#main-wrapper {
+    border-radius: 10px;
+}
+
+/* START OF Change Customizr Background to Texture or Image  */
+body {
+    /* Adjust the Image location wp-content/uploads/2016/12/crossword.jpg) */
+    background: url(/wp-content/uploads/2016/12/greyfloral_@2X.jpg) repeat;
+}
+
+#main-wrapper {
+    background: #FAFAFA;
+    padding: 12px;
+}
+/* END OF Change Customizr Background to Texture or Image  */
+
+/*Set primary color for  Page Titles, Prayerboard titles, and for spans with class primary-color*/
+.primary-color, .entry-title, .pbx-title {
+    color: #61B961 ;
+}
+
+
